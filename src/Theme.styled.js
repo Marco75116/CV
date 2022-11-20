@@ -3,10 +3,10 @@ import { DefaultTheme } from "styled-components";
 export const main = {
   // colors
   colors: {
-    firstColor: " hs1(353, 100%, 65%)",
-    titleColor: "hs1(244, 24%, 26%)",
-    textColor: "hs1(244, 16%, 43%)",
-    bodyColor: "hs1(258, 60%,98%)",
+    firstColor: " hsl(353, 100%, 65%)",
+    titleColor: "hsl(244, 24%, 26%)",
+    textColor: "hsl(244, 16%, 43%)",
+    bodyColor: "hsl(258, 60%,98%)",
     containeColor: "#fff",
   },
 

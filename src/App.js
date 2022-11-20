@@ -6,18 +6,22 @@ import Home from "./Components/home/Home";
 import About from "./Components/about/About";
 import Testimonials from "./Components/testimonials/Testimonials";
 import Contact from "./Components/contact/Contact";
+import { ThemeProvider } from "styled-components";
+import { main } from "./Theme.styled";
 
 function App() {
   return (
     <>
-      <Sidebar />
-      <Home />
-      <About />
-      <Services />
-      <Resume />
-      <Portfolio />
-      <Testimonials />
-      <Contact />
+      <ThemeProvider theme={main}>
+        <Sidebar />
+        <Home />
+        <About />
+        <Services />
+        <Resume />
+        <Portfolio />
+        <Testimonials />
+        <Contact />
+      </ThemeProvider>
     </>
   );
 }

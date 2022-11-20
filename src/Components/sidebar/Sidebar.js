@@ -15,7 +15,7 @@ const Sidebar = () => {
   return (
     <SidebarContainer>
       <LogoContainer>
-        <img src={Logo} alt="logo" />
+        <i className="icon-menu"></i>
       </LogoContainer>
 
       <NavContainer>

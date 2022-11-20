@@ -16,7 +16,10 @@ const HeaderSocials = () => {
       <SocialLink href="https://github.com/Marco75116" target="_blank">
         <SocialIcon icon={faGithub} color={"black"} />
       </SocialLink>
-      <SocialLink href="https://github.com/Marco75116" target="_blank">
+      <SocialLink
+        href="https://www.linkedin.com/in/marc-antoine-ourradour/"
+        target="_blank"
+      >
         <SocialIcon icon={faLinkedin} color={"#0e76a8"} />
       </SocialLink>
       <SocialLink

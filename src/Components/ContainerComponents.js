@@ -7,7 +7,11 @@ import Home from "./home/Home";
 import About from "./about/About";
 import Testimonials from "./testimonials/Testimonials";
 import Contact from "./contact/Contact";
-import { ContainerAll, ContainerContent } from "./ContainerComponents.styled";
+import {
+  ContainerAll,
+  ContainerContent,
+  ContainerComponentsCenter,
+} from "./ContainerComponents.styled";
 
 const ContainerComponents = () => {
   return (
@@ -15,12 +19,14 @@ const ContainerComponents = () => {
       <Sidebar />
       <ContainerContent>
         <Home />
-        <About />
-        <Services />
-        <Resume />
-        <Portfolio />
-        <Testimonials />
-        <Contact />
+        <ContainerComponentsCenter>
+          <About />
+          <Services />
+          <Resume />
+          <Portfolio />
+          <Testimonials />
+          <Contact />
+        </ContainerComponentsCenter>
       </ContainerContent>
     </ContainerAll>
   );

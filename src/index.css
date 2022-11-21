@@ -4,6 +4,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: 'Rubik',sans-serif;
+  background-color: hsl(258, 60%,98%);
 }
 
 html {scroll-behavior: smooth;}

@@ -7,7 +7,7 @@ export const main = {
     titleColor: "hsl(244, 24%, 26%)",
     textColor: "hsl(244, 16%, 43%)",
     bodyColor: "hsl(258, 60%,98%)",
-    containeColor: "#fff",
+    containerColor: "#fff",
   },
 
   shadow: "0px 5px 20px 0px rgb(69 67 96 / 10%)",

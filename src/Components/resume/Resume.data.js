@@ -5,7 +5,7 @@ const Data = [
     icon: "icon-graduation",
     year: "2021 - ",
     title: "Major FINTECH at ESILV",
-    desc: "Blockchain programming, Cryptocurrency market, Cryptography, Web Development, Machine Learning, Datascience and Statistics courses. Weeks training of Soft Skills, entrepreneurial projects.",
+    desc: "Blockchain programming, Cryptocurrency market, Cryptography, Web Development, Machine Learning, Proof of Stake, Virtualization Weeks training of Soft Skills.",
   },
   {
     id: 2,
@@ -13,7 +13,7 @@ const Data = [
     icon: "icon-graduation",
     year: "2019 - 2021",
     title: "Engineering school at Esilv",
-    desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+    desc: "Datascience, IA, Statistics Physics courses, Introduction to financial markets, entrepreneurial projects.",
   },
   {
     id: 3,
@@ -21,7 +21,7 @@ const Data = [
     icon: "icon-graduation",
     year: "2017 - 2019",
     title: "Preparatory class PCSI/PC",
-    desc: "Chemistry Olympiad. TIPE project which takes place part of a thesis on hydrophobic surfaces at the Institut Pierre Gilles-de-Gennes (liquid infused surfaces).",
+    desc: "Maths/Physics and Chemistry courses. Participation to Chemistry Olympiad. TIPE project which takes place part of a thesis on hydrophobic surfaces at the Institut Pierre Gilles-de-Gennes (liquid infused surfaces).",
   },
   {
     id: 4,
@@ -29,7 +29,7 @@ const Data = [
     icon: "icon-briefcase",
     year: "2022 - ",
     title: "Web3 front end developer at Pyratzlabs",
-    desc: "Lorem ipsum dolor sit amet quo ei simul congue exerci     ad nec admodum perfecto.",
+    desc: "Ensure performance,maintainability and realiability of dapp. Build new features based on customer suggestions or advice from the backend.  ",
   },
   {
     id: 5,

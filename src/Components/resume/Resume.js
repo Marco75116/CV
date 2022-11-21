@@ -3,7 +3,7 @@ import Data from "./Resume.data";
 import {
   ContainerResume,
   ResumeSection,
-  ResumeTitles,
+  ResumeTitle,
   ResumeContainerGrid,
   ResumeType,
 } from "./Resume.styled";
@@ -12,7 +12,7 @@ const Resume = () => {
   return (
     <ContainerResume>
       <ResumeSection>
-        <ResumeTitles>resume</ResumeTitles>
+        <ResumeTitle>resume</ResumeTitle>
         <ResumeContainerGrid>
           <ResumeType>
             {Data.map((item, id) => {

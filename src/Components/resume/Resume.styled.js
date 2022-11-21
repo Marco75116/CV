@@ -2,7 +2,11 @@ import styled from "styled-components";
 
 export const ContainerResume = styled.div``;
 export const ResumeSection = styled.section``;
-export const ResumeTitles = styled.h2``;
+export const ResumeTitle = styled.h1`
+  margin-bottom: 3.5rem;
+  color: ${(props) => props.theme.colors.titleColor};
+  font-size: ${(props) => props.theme.font.h1FontSize};
+`;
 export const ResumeContainerGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);

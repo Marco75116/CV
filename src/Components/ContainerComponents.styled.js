@@ -7,4 +7,7 @@ export const ContainerContent = styled.div`
 
 export const ContainerComponentsCenter = styled.div`
   margin: 0px 10%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 4rem;
 `;

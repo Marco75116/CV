@@ -12,6 +12,7 @@ export const ProfilSection = styled.section``;
 
 export const Profil = styled.div`
   text-align: center;
+  color: ${(props) => props.theme.colors.titleColor};
 `;
 
 export const Img = styled.img``;

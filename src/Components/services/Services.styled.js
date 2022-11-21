@@ -4,7 +4,11 @@ export const ServicesContainer = styled.div``;
 
 export const ServicesSection = styled.section``;
 
-export const ServicesTitle = styled.h2``;
+export const ServicesTitle = styled.h1`
+  margin-bottom: 3.5rem;
+  color: ${(props) => props.theme.colors.titleColor};
+  font-size: ${(props) => props.theme.font.h1FontSize};
+`;
 
 export const ServicesContainerGrid = styled.div`
   display: grid;

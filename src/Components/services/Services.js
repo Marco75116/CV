@@ -36,11 +36,11 @@ const data = [
   },
 ];
 
-const Services = () => {
+const Services = (props) => {
   return (
     <ServicesContainer>
       <ServicesSection>
-        <ServicesTitle>Services</ServicesTitle>
+        <ServicesTitle ref={props.refProp}>Services</ServicesTitle>
         <ServicesContainerGrid>
           {data.map((service, i) => {
             return (

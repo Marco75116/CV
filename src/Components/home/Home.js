@@ -11,9 +11,9 @@ import {
 } from "./Home.styled";
 import Me from "../../assets/avatar-1.svg";
 
-const Home = () => {
+const Home = (props) => {
   return (
-    <HomeContainer>
+    <HomeContainer ref={props.refProp}>
       <ProfilSection>
         <Profil>
           <Img src={Me}></Img>

@@ -11,7 +11,7 @@ import {
 } from "./Sidebar.styled";
 import Logo from "../../assets/logo.svg";
 
-const Sidebar = () => {
+const Sidebar = (props) => {
   return (
     <SidebarContainer>
       <LogoContainer>
@@ -21,19 +21,19 @@ const Sidebar = () => {
       <NavContainer>
         <NavMenu>
           <NavList>
-            <NavItem>
+            <NavItem onClick={props.home}>
               <NavLink>
                 <i className="icon-home"></i>
               </NavLink>
             </NavItem>
 
-            <NavItem>
+            <NavItem onClick={props.about}>
               <NavLink>
                 <i className="icon-user-following"></i>
               </NavLink>
             </NavItem>
 
-            <NavItem>
+            <NavItem onClick={props.services}>
               <NavLink>
                 <i className="icon-briefcase"></i>
               </NavLink>
@@ -51,7 +51,7 @@ const Sidebar = () => {
               </NavLink>
             </NavItem>
 
-            <NavItem>
+            <NavItem onClick={props.contact}>
               <NavLink>
                 <i className="icon-bubble"></i>
               </NavLink>

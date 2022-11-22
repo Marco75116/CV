@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Sidebar from "./sidebar/Sidebar";
 import Services from "./services/Services";
 import Resume from "./resume/Resume";
@@ -14,18 +14,31 @@ import {
 } from "./ContainerComponents.styled";
 
 const ContainerComponents = () => {
+  const contactRef = useRef(null);
+  const servicesRef = useRef(null);
+  const aboutRef = useRef(null);
+  const homeRef = useRef(null);
+  const aboutScroll = () => aboutRef.current.scrollIntoView();
+  const homeScroll = () => homeRef.current.scrollIntoView();
+  const contactScroll = () => contactRef.current.scrollIntoView();
+  const servicesScroll = () => servicesRef.current.scrollIntoView();
   return (
     <ContainerAll>
-      <Sidebar />
+      <Sidebar
+        contact={contactScroll}
+        services={servicesScroll}
+        about={aboutScroll}
+        home={homeScroll}
+      />
       <ContainerContent>
-        <Home />
+        <Home refProp={homeRef} />
         <ContainerComponentsCenter>
-          <About />
-          <Services />
+          <About refProp={aboutRef} />
+          <Services refProp={servicesRef} />
           <Resume />
           <Portfolio />
           <Testimonials />
-          <Contact />
+          <Contact refProp={contactRef} />
         </ContainerComponentsCenter>
       </ContainerContent>
     </ContainerAll>

@@ -28,6 +28,7 @@ export const NavList = styled.ul`
 `;
 export const NavItem = styled.li``;
 export const NavLink = styled.a`
+  cursor: pointer;
   font-size: 1.5rem;
   color: ${(props) => props.theme.colors.titleColor};
   font-weight: ${(props) => props.theme.weight.boldFont};

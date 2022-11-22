@@ -12,11 +12,11 @@ import {
   ButtonSend,
 } from "./Contact.styled";
 
-const Contact = () => {
+const Contact = (props) => {
   return (
     <ContactContainer>
       <ContactSection>
-        <ContactTitle>Get In Touch</ContactTitle>
+        <ContactTitle ref={props.refProp}>Get In Touch</ContactTitle>
         <ContainerContent>
           <ContainerInfos>
             <Text style={{ fontWeight: "bold", color: "black" }}>

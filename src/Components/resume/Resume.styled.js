@@ -6,6 +6,7 @@ export const ResumeTitle = styled.h1`
   margin-bottom: 3.5rem;
   color: ${(props) => props.theme.colors.titleColor};
   font-size: ${(props) => props.theme.font.h1FontSize};
+  margin-left: 0.875rem;
 `;
 export const ResumeContainerGrid = styled.div`
   display: grid;

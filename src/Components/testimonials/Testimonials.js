@@ -1,7 +1,8 @@
 import React from "react";
+import { TestimonialsContainer } from "./Testimonials.styled";
 
 const Testimonials = () => {
-  return <div>Testimonials is</div>;
+  return <TestimonialsContainer>Testimonials is</TestimonialsContainer>;
 };
 
 export default Testimonials;

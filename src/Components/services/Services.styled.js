@@ -16,6 +16,10 @@ export const ServicesContainerGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   column-gap: 2rem;
   justify-items: center;
+  @media only screen and (max-width: 900px) {
+    row-gap: 2rem;
+    grid-template-columns: none;
+  }
 `;
 
 export const ServiceContainer = styled.div`

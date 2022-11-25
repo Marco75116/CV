@@ -20,14 +20,14 @@ import {
 
 import Projects from "./Projects";
 
-const Portfolio = () => {
+const Portfolio = (props) => {
   const [items, setItems] = useState(Projects);
   const [filter, setFilter] = useState("");
 
   return (
     <PortfolioContainer>
       <PortfolioSection>
-        <PortfolioTitle>Portfolio</PortfolioTitle>
+        <PortfolioTitle ref={props.refProp}>Portfolio</PortfolioTitle>
         <FiltersContainer>
           <Filter onClick={() => setFilter("")}>Everything</Filter>
           <Filter onClick={() => setFilter("Blockchain Programming")}>
@@ -51,7 +51,7 @@ const Portfolio = () => {
             })
             .map((item, i) => {
               return (
-                <GridItem>
+                <GridItem key={i}>
                   <CardProject>
                     <Thumbnail>
                       <ImgPreview src={item.image} />
@@ -64,7 +64,7 @@ const Portfolio = () => {
                         Techs used :{" "}
                         {item.techs.map((tech, key) => {
                           return (
-                            <span>
+                            <span key={key}>
                               {tech}
                               {key < item.techs.length - 2 && ", "}
                               {key === item.techs.length - 2 && " and "}

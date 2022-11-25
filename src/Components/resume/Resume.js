@@ -8,11 +8,11 @@ import {
   ResumeType,
 } from "./Resume.styled";
 import Card from "./card/Card";
-const Resume = () => {
+const Resume = (props) => {
   return (
     <ContainerResume>
       <ResumeSection>
-        <ResumeTitle>resume</ResumeTitle>
+        <ResumeTitle ref={props.refProp}>Resume</ResumeTitle>
         <ResumeContainerGrid>
           <ResumeType>
             {Data.map((item, id) => {

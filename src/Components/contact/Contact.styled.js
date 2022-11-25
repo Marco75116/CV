@@ -13,6 +13,10 @@ export const ContactTitle = styled.h1`
 export const ContainerContent = styled.div`
   display: grid;
   grid-template-columns: 4fr 6fr;
+  @media only screen and (max-width: 900px) {
+    row-gap: 2rem;
+    grid-template-columns: none;
+  }
 `;
 export const ContainerInfos = styled.div``;
 export const Text = styled.span`
@@ -27,6 +31,9 @@ export const ContainerHeader = styled.div`
   display: flex;
   flex-direction: row;
   column-gap: 3rem;
+  @media only screen and (max-width: 900px) {
+    column-gap: 1rem;
+  }
 `;
 export const TextInput = styled.textarea`
   width: ${(props) => props.width || "100%"};
@@ -54,4 +61,7 @@ export const ButtonSend = styled.button`
   font-weight: ${(props) => props.theme.weight.boldFont};
   margin-top: 10px;
   width: 30%;
+  @media only screen and (max-width: 900px) {
+    width: 50%;
+  }
 `;

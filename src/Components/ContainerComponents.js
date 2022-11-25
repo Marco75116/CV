@@ -18,10 +18,14 @@ const ContainerComponents = () => {
   const servicesRef = useRef(null);
   const aboutRef = useRef(null);
   const homeRef = useRef(null);
+  const portfolioRef = useRef(null);
+  const resumeRef = useRef(null);
   const aboutScroll = () => aboutRef.current.scrollIntoView();
   const homeScroll = () => homeRef.current.scrollIntoView();
   const contactScroll = () => contactRef.current.scrollIntoView();
   const servicesScroll = () => servicesRef.current.scrollIntoView();
+  const portofolioScroll = () => portfolioRef.current.scrollIntoView();
+  const resumeScroll = () => resumeRef.current.scrollIntoView();
   return (
     <ContainerAll>
       <Sidebar
@@ -29,14 +33,16 @@ const ContainerComponents = () => {
         services={servicesScroll}
         about={aboutScroll}
         home={homeScroll}
+        portfolio={portofolioScroll}
+        resume={resumeScroll}
       />
       <ContainerContent>
         <Home refProp={homeRef} />
         <ContainerComponentsCenter>
           <About refProp={aboutRef} />
           <Services refProp={servicesRef} />
-          <Resume />
-          <Portfolio />
+          <Resume refProp={resumeRef} />
+          <Portfolio refProp={portfolioRef} />
           <Testimonials />
           <Contact refProp={contactRef} />
         </ContainerComponentsCenter>

@@ -12,6 +12,10 @@ export const ResumeContainerGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 1.875rem;
+  @media only screen and (max-width: 900px) {
+    row-gap: 2rem;
+    grid-template-columns: none;
+  }
 `;
 export const ResumeType = styled.div`
   /* display: grid; */

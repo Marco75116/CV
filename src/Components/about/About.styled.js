@@ -14,6 +14,10 @@ export const AboutTitle = styled.h1`
 export const AboutGrid = styled.div`
   display: grid;
   grid-template-columns: 1fr 2fr;
+  @media only screen and (max-width: 900px) {
+    row-gap: 2rem;
+    grid-template-columns: none;
+  }
 `;
 export const ImgProfile = styled.div`
   display: flex;
@@ -25,7 +29,6 @@ export const DataGrid = styled.div`
   border-radius: ${(props) => props.theme.borderRadius};
   padding: 1.875rem;
   box-shadow: ${(props) => props.theme.shadow};
-  /* height: 10rem; */
 `;
 
 export const TextDescriptions = styled.div`

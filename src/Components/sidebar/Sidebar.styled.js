@@ -13,9 +13,32 @@ export const SidebarContainer = styled.aside`
   padding: 2.5rem;
   width: 110px;
   box-sizing: border-box;
+  @media only screen and (max-width: 900px) {
+    z-index: 3;
+  }
 `;
 
-export const LogoContainer = styled.a``;
+export const LogoContainer = styled.a`
+  background-color: ${(props) => props.theme.colors.bodyColor};
+  border-radius: ${(props) => props.theme.borderRadius};
+  padding: 0.875rem;
+  box-shadow: ${(props) => props.theme.shadow};
+  position: sticky;
+  top: 2%;
+  /* left: 85%; */
+  z-index: 4;
+`;
+
+export const LogoButton = styled.a`
+  background-color: ${(props) => props.theme.colors.bodyColor};
+  border-radius: ${(props) => props.theme.borderRadius};
+  padding: 0.875rem;
+  box-shadow: ${(props) => props.theme.shadow};
+  position: sticky;
+  top: 40px;
+  margin-left: 30px;
+  z-index: 4;
+`;
 
 export const NavContainer = styled.nav``;
 export const NavMenu = styled.div``;

@@ -12,6 +12,14 @@ export const FiltersContainer = styled.div`
   display: flex;
   column-gap: 1.875rem;
   margin-bottom: 2.5rem;
+
+  @media only screen and (max-width: 900px) {
+    row-gap: 1rem;
+    column-gap: 0.875rem;
+    -webkit-box-pack: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+  }
 `;
 export const Filter = styled.span`
   cursor: pointer;
@@ -26,6 +34,10 @@ export const PortfolioGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.875rem;
+  @media only screen and (max-width: 900px) {
+    row-gap: 2rem;
+    grid-template-columns: none;
+  }
 `;
 
 export const GridItem = styled.div`
@@ -59,11 +71,20 @@ export const CardProject = styled.div`
   }
 `;
 
-export const Thumbnail = styled.div``;
+export const Thumbnail = styled.div`
+  @media only screen and (max-width: 900px) {
+    width: 330px;
+  }
+`;
 
 export const ImgPreview = styled.img`
   height: 400px;
   width: 27rem;
+
+  @media only screen and (max-width: 900px) {
+    width: 100%;
+    height: 320px;
+  }
 `;
 
 export const Mask = styled.div`
@@ -100,6 +121,9 @@ export const ProjectTitle = styled.h3`
   transform: translateY(30px);
   transition: 0.3s;
   opacity: 0;
+  @media only screen and (max-width: 900px) {
+    top: 2.45rem;
+  }
 `;
 
 export const TechUsed = styled.p`

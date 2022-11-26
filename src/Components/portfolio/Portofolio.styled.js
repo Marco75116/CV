@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
-export const PortfolioContainer = styled.div``;
+export const PortfolioContainer = styled.div`
+  display: relative;
+`;
 export const PortfolioSection = styled.section``;
 export const PortfolioTitle = styled.h1`
   margin-bottom: 3.5rem;
@@ -17,7 +19,6 @@ export const FiltersContainer = styled.div`
     row-gap: 1rem;
     column-gap: 0.875rem;
     -webkit-box-pack: center;
-    /* justify-content: center; */
     flex-wrap: wrap;
   }
 `;
@@ -34,6 +35,11 @@ export const PortfolioGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.875rem;
+  @media only screen and (max-width: 1100px) {
+    row-gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   @media only screen and (max-width: 900px) {
     row-gap: 2rem;
     grid-template-columns: none;
@@ -78,8 +84,11 @@ export const Thumbnail = styled.div`
 `;
 
 export const ImgPreview = styled.img`
-  height: 400px;
   width: 27rem;
+
+  @media only screen and (max-width: 1450px) {
+    width: 21rem;
+  }
 
   @media only screen and (max-width: 900px) {
     width: 100%;
@@ -111,30 +120,24 @@ export const Category = styled.span`
   transform: translateY(-40px);
   transition: 0.3s;
 `;
+export const DescriptionContainer = styled.div`
+  position: absolute;
+  top: ${(props) => props.top || "2.75rem"};
+  margin: 0 0 0.98rem;
+  padding: 0 1.25rem;
+`;
 export const ProjectTitle = styled.h3`
   color: white;
   font-size: ${(props) => props.theme.font.h3FontSize};
-  margin: 0 0 0.98rem;
-  padding: 0 1.25rem;
-  position: absolute;
-  top: 3.75rem;
-  transform: translateY(30px);
   transition: 0.3s;
   opacity: 0;
-  @media only screen and (max-width: 900px) {
-    top: 2.45rem;
-  }
 `;
 
 export const TechUsed = styled.p`
   color: white;
   font-size: ${(props) => props.theme.font.normalSize};
-  position: absolute;
-  top: 8rem;
   transition: 0.3s;
   opacity: 0;
-  margin: 0 0 0.98rem;
-  padding: 0 1.25rem;
   opacity: 0;
 `;
 

@@ -1,8 +1,8 @@
 {
-  "homepage": "https://Marco75116.github.io/Portfolio",
-  "name": "portfolio",
-  "version": "0.1.0",
-  "homepage": "http://marc-antoineourradour.fr",
+  "name": "hostinger-react",
+  "homepage": "https://marc-antoineourradour.fr",
+  "version": "1.0.0",
+  "description": "my react application",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.2.1",

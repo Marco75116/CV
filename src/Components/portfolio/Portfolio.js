@@ -16,6 +16,7 @@ import {
   GridItem,
   TechUsed,
   ImgPreview,
+  DescriptionContainer,
 } from "./Portofolio.styled";
 
 import Projects from "./Projects";
@@ -58,22 +59,24 @@ const Portfolio = (props) => {
                       <Mask></Mask>
                     </Thumbnail>{" "}
                     <Category>{item.category}</Category>
-                    <ProjectTitle>{item.title}</ProjectTitle>
-                    {item.techs.length !== 0 && (
-                      <TechUsed>
-                        Techs used :{" "}
-                        {item.techs.map((tech, key) => {
-                          return (
-                            <span key={key}>
-                              {tech}
-                              {key < item.techs.length - 2 && ", "}
-                              {key === item.techs.length - 2 && " and "}
-                              {key === item.techs.length - 1 && "."}
-                            </span>
-                          );
-                        })}
-                      </TechUsed>
-                    )}
+                    <DescriptionContainer top={(i === 5 || i === 3) && "1rem"}>
+                      <ProjectTitle>{item.title}</ProjectTitle>
+                      {item.techs.length !== 0 && (
+                        <TechUsed>
+                          Techs used :{" "}
+                          {item.techs.map((tech, key) => {
+                            return (
+                              <span key={key}>
+                                {tech}
+                                {key < item.techs.length - 2 && ", "}
+                                {key === item.techs.length - 2 && " and "}
+                                {key === item.techs.length - 1 && "."}
+                              </span>
+                            );
+                          })}
+                        </TechUsed>
+                      )}
+                    </DescriptionContainer>
                     <ProjectButton href={item.link} target="_blank">
                       <i className="icon-link work__button-icon"></i>
                     </ProjectButton>

@@ -30,7 +30,7 @@ const Contact = (props) => {
         "Content-Type": "application/json",
       },
       params: contact,
-    }).then((res) => console.log(res.data));
+    });
   };
   useEffect(() => {}, []);
 
@@ -82,7 +82,6 @@ const Contact = (props) => {
             ></TextInput>
             <ButtonSend
               onClick={() => {
-                console.log(contact);
                 query(contact);
                 setContact({
                   id: null,

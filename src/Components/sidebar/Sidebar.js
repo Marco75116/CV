@@ -10,7 +10,6 @@ import {
   Copyright,
   LogoButton,
 } from "./Sidebar.styled";
-import Logo from "../../assets/logo.svg";
 
 const Sidebar = (props) => {
   const [showSideBar, SetShowSideBar] = useState(true);
@@ -24,7 +23,7 @@ const Sidebar = (props) => {
         <i className="icon-menu"></i>
       </LogoButton>
       <SidebarContainer style={{ display: showSideBar ? "" : "none" }}>
-        <LogoContainer>
+        <LogoContainer style={{ opacity: 0 }}>
           <i className="icon-menu"></i>
         </LogoContainer>
 

@@ -4,7 +4,6 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faYoutube, faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Fontawesome = (icon) => {
-  console.log(faCoffee);
   return <FontAwesomeIcon icon={icon.icon}></FontAwesomeIcon>;
 };
 

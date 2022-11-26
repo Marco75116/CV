@@ -1,9 +1,5 @@
-import Work1 from "../../assets/work-1.svg";
-import Work2 from "../../assets/work-2.svg";
-import Work3 from "../../assets/work-3.svg";
-import Work4 from "../../assets/work-4.svg";
 import Work5 from "../../assets/work-5.svg";
-import Work6 from "../../assets/work-6.svg";
+import img7 from "../../assets/Capture d’écran 2022-11-26 à 11.11.28.png";
 
 const Projects = [
   {
@@ -74,7 +70,7 @@ const Projects = [
   },
   {
     id: 7,
-    image: "http://mathieu.buard.free.fr/jeux/ludotheque/p4/horizontal.png",
+    image: img7,
     title: "IA Battle Morpion",
     category: "IA",
     link: "https://github.com/Marco75116/IA_Battle_Morpion",

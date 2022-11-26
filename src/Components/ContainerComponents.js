@@ -37,7 +37,7 @@ const ContainerComponents = () => {
         resume={resumeScroll}
       />
       <ContainerContent>
-        <Home refProp={homeRef} />
+        <Home refProp={homeRef} contact={contactScroll} />
         <ContainerComponentsCenter>
           <About refProp={aboutRef} />
           <Services refProp={servicesRef} />

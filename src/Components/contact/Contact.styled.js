@@ -61,6 +61,7 @@ export const ButtonSend = styled.button`
   font-weight: ${(props) => props.theme.weight.boldFont};
   margin-top: 10px;
   width: 30%;
+  cursor: pointer;
   @media only screen and (max-width: 900px) {
     width: 50%;
   }

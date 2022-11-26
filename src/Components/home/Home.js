@@ -20,7 +20,7 @@ const Home = (props) => {
           <Name>Marc-Antoine</Name>
           <ProfilDescription>Web3 front end developer</ProfilDescription>
           <HeaderSocials></HeaderSocials>
-          <BouttonContact>Contact Me </BouttonContact>
+          <BouttonContact onClick={props.contact}>Contact Me </BouttonContact>
         </Profil>
       </ProfilSection>
     </HomeContainer>
